@@ -1,0 +1,13 @@
+gray
+#42495B
+#7A839E
+
+purple
+#7E76F9
+
+blue
+#1000FF
+
+gradient
+#6156F9 to #1A129F
+
