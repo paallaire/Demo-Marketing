@@ -6,10 +6,7 @@ $o-heading: '.o-heading';
 // placeholder
 
 %heading-base {
-    color: $colors-black;
-    font-weight: 300;
-    line-height: $lineHeight-tight;
-    text-transform: uppercase;
+    @apply font-poppins font-semibold text-gray-1 leading-snug;
 }
 
 %heading-1 {
@@ -19,7 +16,7 @@ $o-heading: '.o-heading';
 
 %heading-2 {
     @extend %heading-base;
-    font-size: $fontSize-24;
+    font-size: $fontSize-25;
 }
 
 %heading-3 {

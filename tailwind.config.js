@@ -66,7 +66,7 @@ module.exports = {
         borderRadius: {
             none: '0',
             sm: '0.125rem',
-            default: '0.25rem',
+            default: '25px',
             md: '0.375rem',
             lg: '0.5rem',
             full: '9999px',
@@ -79,15 +79,7 @@ module.exports = {
             8: '8px',
         },
         boxShadow: {
-            xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
-            sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-            default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-            md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-            lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-            xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-            '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-            inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
-            outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
+            default: '0px 5px 25px 5px rgba(0,0,0,0.1);',
             none: 'none',
         },
         container: {},
@@ -152,6 +144,7 @@ module.exports = {
         }),
         inset: {
             0: '0',
+            '1/2': '50%',
             auto: 'auto',
         },
         letterSpacing: {
@@ -196,9 +189,11 @@ module.exports = {
         },
         maxWidth: (theme, { breakpoints }) => ({
             none: 'none',
-            site: '1920px',
-            grid: '1440px',
+            grid: '1180px',
+            'grid-lg': '1280px',
+            wrapper: '1600px',
             full: '100%',
+            ...theme('spacing'),
             ...breakpoints(theme('screens')),
         }),
         minHeight: {

@@ -1,0 +1,14 @@
+/* ==========================================================================
+#subtitle
+========================================================================== */
+$o-subtitle: '.o-subtitle';
+
+// placeholder
+
+%subtitle-base {
+    @apply font-poppins font-normal text-purple-1 leading-snug;
+}
+
+#{$o-subtitle} {
+    @extend %subtitle-base;
+}
